@@ -1,0 +1,2 @@
+# ComponentFinder
+This repository contains a simple Python script for finding the cheapest website for purchasing a certain electronic component. The script checks sites like Mouser, RS-Online, Farnell, and Digikey, and returns all prices in an Excel sheet, where the cheapest can easily be found. Adding more sites is easy, and so is customizing the output. Eventually, a UI will be created for ease of interacting with the program.
