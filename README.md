@@ -8,14 +8,16 @@ There are still some bugs left to be ironed out due to the flexibility of the pr
 
 - The Farnell description occasionally returns extra text like "You have previously bought this product". This may also be an issue with Farnell.
 
+- If the product is not found, websites may show similar results, returning an incorrect product.
+
 ## Future Work
 Some functionality and restructuring is still needed for ease-of-use. The list is of descending priority.
 
-- A more sophisticated check of whether the component is actually in stock; currently just returns a print() failure.
+- Also include prices when buying in bulks (10, 25, 100 components at a time); may be possible to implement on Mouser by finding <tr data-qty=x> and then finding <span id=lblPrice>; on RS by looking for Price-Break-Quantity and then Price-Break-Price; on Farnell by checking quantity and price.
 
 - Make sure that all currencies are in euros to ease the comparision.
 
-- Returning the actual component link instead of just the search term.
+- Returning the actual component link instead of just the search term for RS Online.
 
 - A more sophisticated decision-making than simply picking the cheapest, as it occasionally results in errors.
 
